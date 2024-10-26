@@ -50,7 +50,8 @@
   <button id="ToLowerCase">ToLowerCase</button>
   <button id="Cleartext">Cleartext</button>
   <h1>RESULTS</h1>
-  <textarea name="" id="outputbox"></textarea>
+  <textarea id="outputbox" readonly>Your content here...</textarea>
+
 
   <script>
     // variable
@@ -87,7 +88,11 @@ let outputboxValue=outputbox.innerText=inputboxVlaue;
     console.log(inputboxVlaue);
 })
 
-
+Cleartext.addEventListener('click',()=>{
+let inputboxVlaue= inputbox.value='';
+let outputboxValue=outputbox.innerText=inputboxVlaue;
+    console.log(inputboxVlaue);
+})
   </script>
 </body>
 </html>
